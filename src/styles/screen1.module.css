@@ -1,0 +1,260 @@
+/* screen1 css */
+
+.BgImg {
+  /* margin: 0; */
+  /* padding: 0 !important; */
+  background: url("../../public/main_bg1.gif");
+  width: auto;
+  height: 101vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.WhiteLogo {
+  border-radius: 50%;
+  width: 40%;
+  height: 75%;
+  /* animation: move-and-stick 1s liner forwards; */
+  /* margin-top: 3%; */
+}
+
+.logo_stick {
+  position: fixed;
+  top: calc(8% - 50px);
+
+  left: calc(4% - 50px);
+  animation: spin-stop 2s linear forwards;
+  transition: 2s;
+  width: 5%;
+  height: auto;
+  z-index: 999;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-stop {
+  0% {
+    transform: rotate(120deg);
+  }
+
+  50% {
+    transform: rotate(240deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes move-and-stick {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(0, 0) scale(0.5);
+  }
+}
+
+@media (max-width: 768px) {
+  .screen3moblie {
+    height: 100vh;
+    background-image: url("../../public/iPhone\ 14\ -\ 1.svg");
+  }
+}
+
+.scroll_text_p {
+  width: 60vw;
+  height: 70vh !important;
+  color: #f3ebeb;
+  font-size: 30px;
+  font-family: "courier";
+  text-align: justify;
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  transform: perspective(250px) rotateX(10deg);
+  line-height: 1.4;
+  overflow-y: scroll !important;
+}
+
+.scroll_text_p::-webkit-scrollbar {
+  display: none;
+}
+
+.scrolled_div {
+  position: absolute;
+  padding-top: 5px;
+  animation: scroll 20s linear infinite;
+  @media only screen and (max-width: 426px){
+    font-size: 16px;
+  }
+}
+.scrolled_div:hover {
+  animation-play-state: paused;
+}
+
+.screen3 {
+  width: 100vw;
+}
+@keyframes scroll {
+  from {
+    top: 100%;
+  }
+  to {
+    top: -170%;
+  }
+}
+
+/* @media only screen and (max-width: 425px) {
+  .logo_stick {
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    animation: screen1_spin-stop__fKjN0 2s linear forwards;
+    transition: 2s;
+    width: 15%;
+    height: auto;
+  }
+} */
+
+/* @media only screen and (min-width: 425px) and (max-width: 768px) {
+  .logo_stick {
+    position: fixed;
+    top: 2%;
+    left: 3%;
+    animation: screen1_spin-stop__fKjN0 2s linear forwards;
+    transition: 2s;
+    width: 15%;
+    height: auto;
+  }
+} */
+
+/* @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo_stick {
+    position: fixed;
+    top: 3%;
+    left: 3%;
+    animation: screen1_spin-stop__fKjN0 2s linear forwards;
+    transition: 2s;
+    width: 10%;
+    height: auto;
+  }
+
+  .scrolled_div {
+    padding-top: 5px;
+    animation: scroll 10s linear infinite;
+  }
+} */
+
+/* @media only screen and (min-width: 800px) and (max-width: 1280px) {
+  .logo_stick {
+    top: 8%;
+    left: 5%;
+  }
+} */
+/* @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  /* .logo_stick {
+    top: 2%; */
+    /* left: 4%; */
+  /* } */
+  /* .WhiteLogo {
+    width: 38%;
+  } */
+/* } */
+.pause {
+  animation-play-state: paused;
+}
+/* @media only screen and (max-width: 1024px) {
+  .WhiteLogo {
+    width: 60%;
+    height: 35%;
+  }
+} */
+
+/* --------------------------------- */
+
+@media only screen and (max-width: 576px) {
+  .logo_stick {
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    animation: screen1_spin-stop__fKjN0 2s linear forwards;
+    transition: 2s;
+    width: 15%;
+    height: auto;
+  }
+  .WhiteLogo{
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+  .logo_stick {
+    position: fixed;
+    top: 2%;
+    left: 3%;
+    animation: screen1_spin-stop__fKjN0 2s linear forwards;
+    transition: 2s;
+    width: 15%;
+    height: auto;
+  }
+  .WhiteLogo{
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .logo_stick {
+    position: fixed;
+    top: 3%;
+    left: 3%;
+    animation: screen1_spin-stop__fKjN0 2s linear forwards;
+    transition: 2s;
+    width: 10%;
+    height: auto;
+  }
+
+  .scrolled_div {
+    padding-top: 5px;
+    animation: scroll 10s linear infinite;
+  }
+  .WhiteLogo{
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px)  {
+  .logo_stick {
+    top: 8%;
+    left: 5%;
+  }
+  .WhiteLogo{
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1920px)  {
+  .logo_stick {
+    top: 2%;
+    left: 0.5%;
+  }
+  .WhiteLogo {
+    width: 38%;
+  }
+  .WhiteLogo{
+    width: 40%;
+    height: 75%;
+  }
+}

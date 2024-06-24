@@ -1,0 +1,83 @@
+.mainBG {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.leftRadius {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.rightRadius {
+    border-radius: 10px;
+
+    @media only screen and (max-width: 426px) {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+.heightRow {
+    height: 35rem;
+}
+
+.centerCol {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.centerVerticleRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup_btn {
+    margin-top: 16px;
+    display: inline;
+    width: 100%;
+    padding: 0rem !important;
+}
+
+.back_btn {
+    float: left;
+    border: 1px solid #ffffff;
+
+    @media only screen and (max-width: 426px) {
+        top: 30px;
+        right: 250px;
+        left: 40px;
+    }
+}
+
+.create_btn {
+    float: right;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 400px) {
+    .heightRow {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .centerVerticleRow after{
+        transform: translateX(0%) translateY(-56%) translateZ(0px);
+    }
+
+    .userform_resp {
+        width: 90% !important;
+        height: 17% !important;
+    }
+
+    .leftRadius {
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+    
+    .rightRadius {
+        border-radius: 7px;
+    }
+    
+}

@@ -1,0 +1,9 @@
+{
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "dbConnectionString",
+      "environmentVariableName": "DBConnectionString"
+    }
+  ]
+}

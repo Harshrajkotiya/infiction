@@ -1,0 +1,55 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-infictionwebappweb20-dev-143026-authRole",
+      "UnauthRoleArn": "arn:aws:iam::242565479481:role/amplify-infictionwebappweb20-dev-143026-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::242565479481:role/amplify-infictionwebappweb20-dev-143026-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-infictionwebappweb20-dev-143026-deployment",
+      "UnauthRoleName": "amplify-infictionwebappweb20-dev-143026-unauthRole",
+      "StackName": "amplify-infictionwebappweb20-dev-143026",
+      "StackId": "arn:aws:cloudformation:ap-south-1:242565479481:stack/amplify-infictionwebappweb20-dev-143026/e34bbbd0-e43e-11ed-be0c-0a1003a05e60",
+      "AmplifyAppId": "diov067m0svrr"
+    },
+    "categories": {
+      "function": {
+        "dailyexpirationofholds": {
+          "dbConnectionString": "'postgres://DhruviTMBS:qoU7nZWlzNT8@ep-little-violet-026767.ap-southeast-1.aws.neon.tech:5432/infictionDB?sslmode=require'",
+          "deploymentBucketName": "amplify-infictionwebappweb20-dev-143026-deployment",
+          "s3Key": "amplify-builds/dailyexpirationofholds-714e69674d5779755869-build.zip"
+        }
+      },
+      "auth": {
+        "infictionwebappweb20": {}
+      },
+      "storage": {
+        "s3infictionwebappstorage": {}
+      }
+    }
+  },
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-infictionwebappweb20-prod-143146-authRole",
+      "UnauthRoleArn": "arn:aws:iam::242565479481:role/amplify-infictionwebappweb20-prod-143146-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::242565479481:role/amplify-infictionwebappweb20-prod-143146-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-infictionwebappweb20-prod-143146-deployment",
+      "UnauthRoleName": "amplify-infictionwebappweb20-prod-143146-unauthRole",
+      "StackName": "amplify-infictionwebappweb20-prod-143146",
+      "StackId": "arn:aws:cloudformation:ap-south-1:242565479481:stack/amplify-infictionwebappweb20-prod-143146/6c2bb990-1f00-11ee-9d78-0a353e80a4d6",
+      "AmplifyAppId": "diov067m0svrr"
+    },
+    "categories": {
+      "auth": {
+        "infictionwebappweb20": {}
+      },
+      "function": {
+        "dailyexpirationofholds": {
+          "dbConnectionString": "'postgres://DhruviTMBS:qoU7nZWlzNT8@ep-little-violet-026767.ap-southeast-1.aws.neon.tech:5432/infictionDB?sslmode=require'",
+          "deploymentBucketName": "amplify-infictionwebappweb20-dev-143026-deployment",
+          "s3Key": "amplify-builds/dailyexpirationofholds-714e69674d5779755869-build.zip"
+        }
+      }
+    }
+  }
+}

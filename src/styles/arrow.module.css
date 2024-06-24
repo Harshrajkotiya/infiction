@@ -1,0 +1,72 @@
+.container {
+  animation: none;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 10PX;
+  /* top: 96%; */
+  right: 1PX;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+}
+
+.black_arrow {
+  position: absolute;
+  bottom: 0;
+  /* top: 95%; */
+  right: 0%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.black_Uparrow {
+  position: absolute;
+  /* bottom: 10%; */
+  top: 3%;
+  right: 1%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+.Screen4_arrow {
+  position: absolute;
+  top:85%;
+  right: 1%;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  .Screen4_arrow {
+    top:79% !important;
+    display: none;
+  }
+}
+
+#scroll_icon {
+  animation: animate 1s linear;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-10px);
+    text-shadow: 0px 50px 0px black;
+  }
+  20% {
+    transform: translateY(0px);
+    text-shadow: 0px 10px 0px black;
+  }
+  40% {
+    transform: translateY(0px);
+    text-shadow: 0px 50px 0px black;
+  }
+  60% {
+    transform: translateY(0px);
+    text-shadow: 0px 0px 0px black;
+  }
+  100% {
+    transform: translateY(10px);
+    text-shadow: 0px 10px 0px black;
+  }
+}
+

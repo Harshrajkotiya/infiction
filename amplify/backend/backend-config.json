@@ -1,0 +1,104 @@
+{
+  "api": {
+    "infictionwebappweb20": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 30,
+              "description": "api key description"
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
+  "auth": {
+    "infictionwebappweb20": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS",
+            "REQUIRES_UPPERCASE"
+          ],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL",
+          "BIRTHDATE",
+          "PHONE_NUMBER",
+          "NAME",
+          "PICTURE"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "dailyexpirationofholds": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_dailyexpirationofholds_dbConnectionString": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "dailyexpirationofholds"
+        }
+      ]
+    },
+    "AMPLIFY_function_dailyexpirationofholds_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "dailyexpirationofholds"
+        }
+      ]
+    },
+    "AMPLIFY_function_dailyexpirationofholds_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "dailyexpirationofholds"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "s3infictionwebappstorage": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "region": "ap-south-1",
+      "service": "S3"
+    }
+  }
+}

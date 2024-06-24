@@ -1,0 +1,159 @@
+.container {
+  background: black;
+  font-family: "courier" !important;
+  width: 100%;
+}
+
+#header {
+  position: absolute;
+  width: 220px;
+
+}
+
+.adminPanel{
+  height: 100%;
+  display: flex;
+  min-height: 100vh;
+}
+
+
+
+
+/* Media query for mobile */
+@media (max-width: 600px) {
+  .adminPanel {
+    flex-wrap: wrap;
+    /* Wrap the child divs into separate rows on mobile */
+  }
+  .adminPanelChild {
+    flex-basis: 100%;
+    /* Set the flex-basis to 100% to make each child div take up the full width on mobile */
+  }
+}
+
+.user_header{
+  background-color: #fafafa;
+}
+.logotext {
+  color: white;
+}
+
+.closemenu {
+  color: #000;
+  position: absolute;
+  right: 0;
+  z-index: 9999;
+  line-height: 20px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 22px;
+  top: 55px;
+  cursor: pointer;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.app .btn_toggle {
+  cursor: pointer;
+  display: none;
+}
+
+.app .sidebar-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.app .sidebar-btn-wrapper .sidebar-btn {
+  padding: 1px 15px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #adadad;
+  text-decoration: none;
+  margin: 0 auto;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+}
+
+.app .sidebar-btn-wrapper .sidebar-btn span {
+  margin-left: 5px;
+  font-size: 13px;
+}
+
+.app .sidebar-btn-wrapper .sidebar-btn span:hover {
+  color: $highlight-color;
+}
+
+.collapsed .sidebar-btn {
+  display: inline-block;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 40px;
+  padding: 0;
+}
+
+.main {
+  padding: 24px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.main .header {
+  margin-bottom: 16px;
+  border-bottom: 1px solid #efefef;
+}
+
+.block {
+  display: flex;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: #545454;
+
+ 
+}
+
+.block >span {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .app .btn_toggle {
+    display: flex;
+  }
+}
+
+
+.badge {
+  padding: 3px 6px;
+  font-size: 9px;
+  letter-spacing: 1px;
+  border-radius: 15px;
+
+  &.red {
+    color: #ffffff;
+    background: #d63030;
+  }
+
+  &.gray {
+    color: #ffffff;
+    background: #777777;
+  }
+
+  &.yellow {
+    color: #000000;
+    background: #ffd331;
+  }
+}

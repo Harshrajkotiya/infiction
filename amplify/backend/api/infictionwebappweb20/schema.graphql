@@ -1,0 +1,11 @@
+type ProfileData @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  infiction_username: String
+  email: String
+  dob: String
+  phone: String
+  highest_educatio: String
+  short_bio: String
+}
+ 

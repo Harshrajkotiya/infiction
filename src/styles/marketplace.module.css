@@ -1,0 +1,28 @@
+.screen4Div {
+  background-image: url("/main_bg.gif");
+  background-size: "cover";
+  width: "auto";
+  height: "auto";
+  padding: "0px 50px 0px 50px";
+}
+.marketplace {
+  color: transparent;
+  width: 100%;
+  height: 90vh;
+  padding: 50px;
+}
+@media only screen and (min-width: 1024px) {
+  .screen4Div {
+    /* margin-top: 20%; */
+  }
+  .marketplace {
+    height: 90vh;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .marketplace {
+    /* margin-top: 50%; */
+    height: auto;
+  }
+}

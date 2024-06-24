@@ -1,0 +1,22 @@
+.imgSmall {
+    width: auto;
+    height: 40px;
+}
+
+.imgLarge {
+    width: 350px;
+    height: auto;
+
+    
+}
+
+.verticleCenter {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+

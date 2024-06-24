@@ -1,0 +1,531 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace, "Mango Grotesque",
+    "poppins", courier;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "courier";
+}
+
+.userform {
+  width: 100%;
+  height: 10%;
+}
+
+.forgotinput {
+  width: 70%;
+}
+
+.userform input,
+.forgotform input {
+  background-color: #eee !important;
+  border: none !important;
+  padding: 12px 15px !important;
+  width: 100% !important;
+}
+
+.userform:focus {
+  background-color: #000000;
+  color: white;
+}
+
+.errors .toast-header .btn-close {
+  margin-left: auto !important;
+}
+
+input:focus,
+input:active,
+.form-select:focus,
+.form-select:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.myModal,
+.filterModal,
+.feedbackModal {
+  /* overflow: hidden !important; */
+  -ms-overflow-style: none !important;
+  /* IE and Edge */
+  scrollbar-width: none !important;
+  /* Firefox */
+}
+
+.myModal::-webkit-scrollbar,
+.filterModal::-webkit-scrollbar,
+.feedbackModal::-webkit-scrollbar {
+  display: none !important;
+  color: transparent;
+}
+
+.myModal .modal-dialog .modal-content {
+  background: transparent;
+  border: none;
+}
+
+.filterModal .modal-dialog .modal-content,
+.feedbackModal .modal-dialog .modal-content {
+  background-color: transparent;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedbackModal .modal-dialog .modal-content {
+  background-color: rgb(66, 66, 66);
+}
+
+.admin_login .modal-content {
+  background: none;
+  border: none;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.admin_login .modal-dialog {
+  display: flex;
+  justify-content: center;
+}
+
+.feedbackModal .modal-header,
+.feedbackModal .modal-body {
+  width: 100%;
+}
+
+.dash_tab .nav-tabs .nav-link {
+  border: none;
+  border-radius: 0px;
+  /* width: 200px; */
+  height: 60px;
+  font-size: medium;
+  color: #666873;
+  margin-right: 10px;
+  border-color: #666873 !important;
+  border-bottom: 1px solid;
+}
+
+.member_dash_tab .nav-tabs .nav-link {
+  border-bottom: none;
+}
+
+.dash_tab .nav-tabs {
+  border-color: #666873;
+  padding: 0;
+  border-bottom: none;
+}
+
+.dash_tab .nav {
+  height: 80px;
+}
+
+.member_dash_tab .nav {
+  height: 43px;
+
+  @media only screen and (max-width: 426px) {
+    width: max-content;
+  }
+}
+
+.dash_tab .nav-tabs .nav-link.active {
+  border-bottom: 1px solid !important;
+  color: #f3ae09 !important;
+  background-color: transparent !important;
+}
+
+.member_dash_tab .nav-tabs .nav-link.active {
+  background-color: #1f1f1f !important;
+  border-bottom: 2px solid white !important;
+}
+
+.dash_tab .nav-tabs .nav-item.show .nav-link,
+.dash_tab .nav-tabs .nav-link:hover {
+  background-color: transparent !important;
+  border: none;
+  color: #f3ae09 !important;
+  border-radius: 0px;
+  width: fit-content;
+}
+
+.dash_table table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.dash_table td,
+.dash_table th {
+  border: 1px solid rgba(102, 104, 115, 0.6);
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+  white-space: nowrap;
+}
+
+.dash_table th {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dash_table td:not(:first-child),
+.dash_table th:not(:first-child) {
+  border-left: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.dash_table td:not(:last-child),
+.dash_table th:not(:last-child) {
+  border-right: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.dash_table thead {
+  background: rgba(232, 227, 227, 0.2);
+  color: white;
+}
+
+.dash_table .react-bootstrap-table table {
+  table-layout: auto;
+  width: 100%;
+}
+
+.pagination_style .page-link,
+.pagination_style .page-item,
+.pagination_style .page-item.disabled {
+  background-color: #292929 !important;
+  border: none;
+  color: white;
+}
+
+.pagination_style .page-item:first-child {
+  border-radius: 4px 0px 0px 4px;
+  color: #7a7a7a;
+}
+
+.pagination_style .page-item:last-child {
+  border-radius: 0px 4px 4px 0px;
+}
+
+.pagination_style .page-link:last-child {
+  color: #7a7a7a;
+}
+
+.pagination_style .active>.page-link {
+  background-color: #f3ae09 !important;
+  margin: 2px;
+  border-radius: 4px;
+  color: black;
+}
+
+.btn_style .btn:hover {
+  border-color: #f3ae09;
+  color: #f3ae09;
+  background-color: transparent;
+}
+
+.user_dropDown button#user-profile-dropdown {
+  background: transparent;
+  border: none;
+}
+
+.user_dropDown .dropdown-toggle::after {
+  display: none;
+}
+
+.user_dropDown .dropdown-menu.show {
+  background: #333333;
+  color: white;
+  transform: translate(0px, 86px) !important;
+  border-radius: 0px;
+
+  @media only screen and (max-width: 426px) {
+    transform: translate(-15px, 35px) !important
+  }
+}
+
+.user_dropDown a.dropdown-item {
+  color: white;
+}
+
+.user_dropDown a.dropdown-item:hover {
+  background-color: #f3ae09;
+}
+
+.user_dropDown a.dropdown-item:hover span {
+  margin-left: -20px;
+  transition: 0.5s;
+}
+
+.user_dropDown a.dropdown-item:not(:hover) span {
+  margin-left: 0px;
+  transition: 0.5s;
+}
+
+.user_dropDown .dropdown-item:hover .icon_style {
+  visibility: hidden;
+}
+
+.progressivebar .progress-bar {
+  background-color: #f3ae09;
+}
+
+input[type="checkbox"] {
+  display: inline-block !important;
+  margin-right: 10px;
+  width: auto;
+  margin-top: 0 !important;
+  position: relative !important;
+}
+
+.accept_checked input[type="checkbox"]+label:before,
+input[type="checkbox"]+label:after {
+  display: none;
+  padding-left: 0 !important;
+  margin-left: 50px !important;
+  margin-top: 10px !important;
+}
+
+input[type="date"]:before {
+  content: attr(placeholder) !important;
+  color: #aaa;
+  margin-right: 0.5em;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
+}
+
+label {
+  padding-left: 0 !important;
+  margin-left: 10px;
+}
+
+span.order-4,
+span.caret-4-asc,
+span.caret-4-desc {
+  color: #f3ae09;
+}
+
+.profile_update_form input.input-box,
+.profile_update_form textarea,
+.profile_update_form input.input-box,
+.profile_update_form input {
+  background: black !important;
+  border-color: black !important;
+  color: white !important;
+  padding: 12px 10px 12px 10px !important;
+  color-scheme: black !important;
+}
+
+.profile_update_form input.input-box,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 2px;
+  filter: invert(1);
+}
+
+.profile_update_form input:focus,
+.profile_update_form textarea:focus {
+  background: black !important;
+  color: white;
+  /* border: 2px solid rgba(46, 46, 248, 0.473) !important;; */
+}
+
+.Add_funds input,
+.Add_funds textarea {
+  background: transparent !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 5px !important;
+}
+
+::placeholder {
+  color: #b8b8b8 !important;
+  opacity: 1 !important;
+}
+
+.react-tel-input .form-control {
+  width: 100% !important;
+  background: black !important;
+  border-color: black !important;
+  padding: 12px 10px 12px 45px !important;
+  height: auto !important;
+}
+
+.react-tel-input .flag-dropdown {
+  border: none !important;
+  padding: 0 !important;
+}
+
+.react-tel-input .flag-dropdown .country-list {
+  background: black !important;
+  border-color: black !important;
+}
+
+.react-tel-input .country-list .country {
+  display: flex !important;
+}
+
+.react-tel-input .country-list .country.highlight,
+.react-tel-input .country-list .country:hover {
+  background-color: #f3ae09 !important;
+  color: black;
+}
+
+.canvasclose .btn-close {
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat !important;
+}
+
+.dash_table .table-responsive {
+  /* -ms-overflow-style: none !important; */
+  /* IE and Edge */
+  /* scrollbar-width: none !important; */
+  /* Firefox */
+}
+
+.dash_table .table-responsive::-webkit-scrollbar {
+  border-radius: 3px !important;
+  background: #292929 !important;
+  height: 5px;
+}
+
+.dash_table .table-responsive::-webkit-scrollbar-thumb {
+  border-radius: 2px !important;
+  background: #f3ae09 !important;
+}
+
+.dash_table .table-responsive::-webkit-scrollbar-track {
+  height: 1px !important;
+}
+
+@media print {
+  .react-pdf__Document {
+    display: none;
+  }
+}
+
+.react-pdf__Page__textContent,
+.react-pdf__Page__annotations {
+  display: none !important;
+}
+
+.PDFModal .modal-dialog .modal-content {
+  align-items: center !important;
+}
+
+.PDFModal .modal-dialog {
+  width: fit-content;
+}
+
+.PDFModal .modal-dialog .modal-header {
+  width: 100%;
+  background-color: white;
+}
+
+.filtercheckboxhover {
+  background-color: transparent;
+  padding-left: 10px;
+
+}
+
+.filtercheckboxhover:hover {
+  background-color: #f3ae09;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.filtercheckbox .btn-group-vertical {
+  background-color: #333333;
+  border-radius: 0;
+  width: 18%;
+}
+
+.filtercheckbox [type="checkbox"] {
+  accent-color: #f3ae09;
+}
+
+.filtercheckbox [type="checkbox"]:checked+label:before {
+  background: none;
+}
+
+.filtercheckbox [type="checkbox"]:not(:checked)+label:before {
+  width: 0;
+  height: 0;
+  background: none;
+  border-radius: 0;
+  left: 0;
+  top: 0;
+}
+
+.marketplace_bid button.btn.btn-primary {
+  background: #292929 !important;
+  border-color: #B3B3B3 !important;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+.marketplace_bid button.btn:focus {
+  background: #f3ae09 !important;
+  border-color: #f3ae09 !important;
+}
+
+.tooltip-inner {
+  background: rgb(66, 66, 66) !important;
+}
+
+.tooltip-arrow::before {
+  border-bottom-color: rgb(66, 66, 66) !important;
+}
+
+@media only screen and (max-width: 426px) {
+  .myModal .modal-dialog {
+    margin: 0px !important;
+
+  }
+
+  .userform {
+    /* margin: 0.7rem; */
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .myModal .modal-dialog {
+    margin: 0px !important;
+
+  }
+
+  .userform {
+    margin: 0.7rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+  }
+}
+
+.admin_breadcrumb a  {
+  text-decoration: none;
+  color: #000000;
+
+}
+
+li.breadcrumb-item.admin_breadcrumb.active{
+ color: blue !important;
+}

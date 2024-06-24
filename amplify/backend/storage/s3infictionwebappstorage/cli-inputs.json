@@ -1,0 +1,15 @@
+{
+  "resourceName": "s3infictionwebappstorage",
+  "bucketName": "infiction-web-app-storage",
+  "policyUUID": "8cf00e72",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ",
+    "CREATE_AND_UPDATE"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}

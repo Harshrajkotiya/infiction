@@ -1,0 +1,150 @@
+.FooterBg {
+  background-color: black;
+  color: white;
+  padding: 2%;
+  /* -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; */
+
+}
+
+.UlStyle {
+  font-family: "courier";
+  display: contents;
+  list-style-type: none;
+}
+
+.UlStyle li {
+  font-family: "courier";
+}
+
+.UlStyle li:hover {
+  color: #f3ae09;
+  cursor: pointer;
+}
+
+.AStlye {
+  font-family: "courier";
+  text-decoration: none;
+  color: white;
+}
+
+.AStlye:hover {
+  color: #f3ae09;
+}
+
+.SocileMedia {
+  display: flex;
+  gap: 8px;
+}
+
+.CopyRight {
+  justify-content: flex-end;
+}
+
+.fontMango_grotesque {
+  font-family: "courier";
+
+}
+
+.about_company {
+  display: contents;
+  @media only screen and (max-width: 426px){
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+.facebook {
+  content: url("../../public/facebook.svg");
+}
+
+.facebook:hover {
+  content: url("../../public/color_Facebook.svg");
+}
+
+.linkdin {
+  content: url("../../public/linkdin.svg");
+}
+
+.linkdin:hover {
+  content: url("../../public/color_linkedin.svg");
+}
+
+.twitter {
+  content: url("../../public/twitter.svg");
+}
+
+.twitter:hover {
+  content: url("../../public/color_Twitter.svg");
+}
+
+.instagram {
+  content: url("../../public/instagram.svg");
+}
+
+.instagram:hover {
+  content: url("../../public/color_Instagram.svg");
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px){
+  .FooterBg img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+@media only screen and (min-width: 426px) {
+  
+  .footerArrow{
+    display: none;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .FooterBg ul li {
+    width: fit-content;
+    font-size: 12px;
+
+  }
+
+  .FooterBg p {
+    font-size: 11px;
+  }
+
+  .FooterBg h5 {
+    width: fit-content;
+    font-size: 14px;
+
+  }
+
+  .FooterBg a {
+    font-size: 11px;
+
+  }
+
+  .FooterBg h6 {
+    width: 40%;
+    font-size: 11px;
+
+  }
+  .FooterBg img {
+    width: 70px;
+    height: 70px;
+  }
+  .media_image{
+    text-align: center;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    
+  }
+  .SocialMedia{
+    text-align: center;
+    padding: 2px;
+  }
+  .SocialMedia a{
+   
+    padding: 10px;
+  }
+
+}
