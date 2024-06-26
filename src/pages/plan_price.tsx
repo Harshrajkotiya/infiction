@@ -1,9 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { loadStripe } from "@stripe/stripe-js";
 import { processSubscription } from '@/utils/payment';
-import { Auth } from 'aws-amplify';
-import { processGetuser } from '@/lib/users';
 import { AuthenticateUser } from '@/utils/protecteRoutes';
+import { useEffect, useState } from 'react';
 
 export default function Plan_price({ plans }) {
   const [user, setUser] = useState(null);
